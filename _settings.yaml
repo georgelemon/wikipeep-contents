@@ -1,3 +1,10 @@
+# There are a few ways of setting a landing page.
+# 1. You can do it by mapping an php file from your current theme.
+# 2. You can map a category from your content dir, which in this case,
+# will also be applied the index preference from _settings.yaml located in the specific category.
+# If not, it will automatically create a category listing with all articles inside of that.
+index: index.php
+
 # Enabling infobox globally and inserting in
 # the main sidebar bellow navigation menu
 infobox_aside:

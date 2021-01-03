@@ -1,7 +1,15 @@
+# Choose which Markdown should be used as root page
+# in this category. The given name must be identically with the Markdown (without .md extension)
+index: 'Console Commands'
+
+# Setting up the menu related to this category
 menu:
-  label: 'Console'
-  icon: 'terminal'
-  order: 10
+  label: 'Console'          # Optionally, it use this instead of the name of the directory
+  icon: 'terminal'          # Optionally, prepends an SVG icon via Dessert from FeatherIcons library
+  order: 2                  # Optionally, reorder items in array based on given order
+
+# When there is no index specified, it will use settings
+# bellow in order to create a specific page heading
 settings:
   heading:
     title: Console Commands

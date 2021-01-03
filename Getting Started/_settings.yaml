@@ -1,3 +1,8 @@
+# Choose which Markdown should be used as root page
+# in this category. The given name must be identically with the Markdown (without .md extension)
+index: 'Getting Started'
+
+# Setting up the menu related to this category
 menu:
-  label: '👋 Getting Started'
-  order: 1
+  label: '👋 Getting Started'           # Optionally, it use this instead of the name of the directory
+  order: 1                              # Optionally, reorder items in array based on given order

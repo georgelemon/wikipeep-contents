@@ -2,14 +2,13 @@
 Composer is great! While in version <code>1.0.0</code>, WikiPeep composer dependencies are the following
 ```
     "symfony/http-foundation": "^5.2@dev",
+    "symfony/console": "5.x-dev",
+    "symfony/yaml": "5.x-dev",
     "illuminate/support": "^9.0@dev",
     "illuminate/filesystem": "^9.0@dev",
-    "vlucas/phpdotenv": "^5.1@dev",
-    "nyholm/psr7": "^1.0@dev",
-    "symfony/yaml": "5.x-dev",
-    "georgelemon/dessert": "dev-master",
-    "symfony/console": "5.x-dev",
     "jamesmoss/flywheel": "dev-master"
+    "vlucas/phpdotenv": "^5.1@dev",
+    "georgelemon/dessert": "dev-master",
 ```
 
 

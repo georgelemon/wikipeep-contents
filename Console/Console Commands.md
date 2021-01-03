@@ -5,7 +5,7 @@ Console gives WikiPeep the power to be controlled via a terminal, which makes ev
 Things like building contents based on their status, caching routes and managing the status of the application.
 Without the Symfony Console API all these couldn't be possible without dealing with an dashboard admin interface, which we don't need it yet, and we don't have in plan to make one too soon.
 
-## [Availalbe Commands](#available-commands)
+## Availalbe Commands
 
 You can find all available commands using
 ```bash
@@ -39,7 +39,9 @@ Available commands:
                     in case you forgot what you wrote last night.
 
   put:private       Makes your WikiPeep instance private based on a basic password
-                    that you can set via terminal and will be stored in .env file located in root of the app.
+                    that you can set via terminal and will be stored in .env file
+                    located in root of the app.
+                    
   put:public        Turns off the private mode without deleting the previously password.
   put:down          Puts the enitre application down for maintenance, showing a nice 500 error page.
   put:up            Brings the application back online from maintenance.

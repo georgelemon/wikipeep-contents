@@ -1,20 +1,12 @@
 # Local Environment
-There are multiple ways of a how to develop your Wiki. WikiPeep has been developed using [Homestead](https://laravel.com/docs/8.x/homestead). But you can use it with Docker, a custom Vagrant Box or even with the basic built-in web server that comes packed in with PHP.
+**There are multiple ways to install WikiPeep**. Was by default developed using the **MacOS built-in PHP (8.0)** and its basic webserver, but you can go wild with [Homestead](https://laravel.com/docs/8.x/homestead), with Docker, or with your custom Vagrant Box.
 
-### Requirements.
-Running or Developing WikiPeep requires a few things
-- PHP 7.4 or newer
-- Composer
+### Requirements
+- PHP 7.4 (recommended ^8.0)
+- PHP mbstring Extension
+- XML Extension (For fast rendering SVG icons with DOM XML, instead of SVG Sprites/Webfonts/JavaScript)
+- Composer (latest version)
 - SASS Compiler
 - Git
 
 [Read here about WikiPeep Composer dependencies](/development/composer-dependencies)
-
-## What's Homestead?
-Homestead is an official, pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install PHP, a web server, and any other server software on your local machine.
-
-Homestead runs on any Windows, macOS, or Linux system and includes Nginx, PHP, MySQL, PostgreSQL, Redis, Memcached, Node, and all of the other software you need to develop amazing Laravel applications.
-
-[Read more about Homestead on Laravel Documentation](https://laravel.com/docs/8.x/homestead)
-
-**Installing Homestead does not require Laravel or anything related to Laravel framework**

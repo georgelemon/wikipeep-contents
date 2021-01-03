@@ -1,3 +1,7 @@
+# Choose which Markdown should be used as root page
+# in this category. The given name must be identically with the Markdown (without .md extension)
+index: 'Language Support'
+
 menu:
   label: 'Languages'
   order: 5
