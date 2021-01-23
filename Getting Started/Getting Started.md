@@ -44,17 +44,22 @@ Building the JSON database will create a <code>database</code> directory inside 
 
 A JSON content has a dead simple structure, containing summary contents (when available) and the article body where will store the parsed content from markdown.
 
-Also, by default, you have a creation date that will be used on front-end to display the "Last Updated" note. See [Configuration](#application-config) for updating date based on your timezone.
+Also, by default, you have a creation date that will be used on front-end to display the "Last Updated" note. See [Configuration](/getting-started/#configuring-the-app) for updating date based on your timezone.
 ```json
 {
-    "summary": "An array with all Anchor links that will be used for generating the summary contents",
-    "article": "The content of the article",
-    "__update": "2020-12-26 07:33:33"
+    "title": "Title based on the Markdown file's name",
+    "summary": "Summary nav auto-generated based on URL anchors from article",
+    "article": "Your parsed and serialized markdown content",
+    "__update": {
+        "date": "2021-01-03 13:09:59.000000",
+        "timezone_type": 3,
+        "timezone": "Europe\/Bucharest"
+    }
 }
+
 ```
 
-
-## Application Config
+## [Configuring the App](#configuring-the-app)
 The base configuration of WikiPeep can be done via <code>.env</code>, but there is also some application related
 configs that can be found under <code>config/</code> directory. There you have some basic settings that can influence the app functionality and appearance, like:
 

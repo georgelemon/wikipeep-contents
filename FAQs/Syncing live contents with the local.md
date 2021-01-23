@@ -1,7 +1,25 @@
 # Syncing your live contents with the local
-Well, the best solution is to add your <code>/content</code> directory to a git repository for versioning, so you can have it separately from WikiPeep instance.
+Keeping your markdown contents in a git repository is probably the best idea. In this case you can easily sync the contents between environments. 
 
-Once you're on git, you can just <code>ssh</code> to your live machine and <code>git pull</code> from there and also <code>artisan build:all</code>.
+**Checking for available edits**
+```
+php artisan has:edits
+
+You have 1 edit available for publishing
+Publishing edits will not affect any other contents.
+```
+
+**Publishing only the edits**
+```
+php artisan publish:edits
+
+All your edits have been published!
+Everything is up to date 👌
+```
+
+[Go to Console page for finding all Artisan commands](/console) or just run <code>php artisan</code> in your console.
 
 ## On shared hosting
-Probably the only solution is to delete the <code>/storage/database</code>  directory and upload it back the updated <code>database</code> from your local machine.
+Some hosting providers may still offer <code>ssh</code> access on demand. Anyway, in case you don't have ssh access you can build the contents locally and update the live version via <code>FTP</code> by deleting the old <code>/storage/database</code> directory and uploading it back the updated <code>database</code> from your local. That's it!
+
+[Do you have more questions? Check the FAQ page](/faqs)
