@@ -17,41 +17,31 @@ Available commands:
   help         Displays help for a command
   list         Lists commands
 
+ has
+  has:deletes    Determine if there are any markdown files deleted from content directory.
+  has:edits      Determine if there are any unpublished edits, in case you forgot what you did last night.
+  has:new        Checking if there are any new contents that must be published
+
  publish
-  publish:all         (Re)builds and publish all the contents.
-                      Warning all dates will be reseted according to latest build.
-
-  publish:edits       Rebuild & republish only modified contents published before.
-  publish:new         Indexing, building & publishing new contents based on new markdown files.
-  publish:deletes     Publish deleted contents and update the front-end.
-
- cache
-  cache:routes      Cache all valid routes
-
- clear
-  clear:routes      It clears all cache routes without creating a new cache instance
-  clear:contents    Warning! It clears all contents stored in database repository,
-                    including search results, categories, articles, navigation items.
-                    This command has nothing to do with your Markdown contents.
-
-  has
-   has:edits        Determine if there are any unpublished edits,
-                    in case you forgot what you wrote last night.
-
-  put:private       Makes your WikiPeep instance private based on a basic password
-                    that you can set via terminal and will be stored in .env file
-                    located in root of the app.
-                    
-  put:public        Turns off the private mode without deleting the previously password.
-  put:down          Puts the enitre application down for maintenance, showing a nice 500 error page.
-  put:up            Brings the application back online from maintenance.
+  publish:all    Builds the content of the application based on provided markdown.
+  publish:edits  Builds contents only for modified articles that are already published.
+  publish:new    Builds new contents only without touching edits or anything published before.
    
 ```
 
 ## Todos
-Future commands to be added are the following.
+To be added
+```bash
+ cache
+  cache:clear    Clear all cache
+  cache:off      Disable caching routes and search API endpoint.
+  cache:on       Enable caching routes and search API endpoint.
 
-Show which markdown files have been edited without being published with
-```
-artisan show:edits
+ app
+  app:down       Make WikiPeep application instance offline.
+  app:up         Make WikiPeep application instance online.
+  app:public     Set WikiPeep application available for public.
+  app:private    Set WikiPeep instance as private by setting a password.
+
+  app:clear      Delete all compiled contents and current settings
 ```

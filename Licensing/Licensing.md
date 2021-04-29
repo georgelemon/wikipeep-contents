@@ -1,5 +1,5 @@
 # [Open Source](#open-source)
-First off, thanks for your interest in using <strong>WikiPeep</strong>. WikiPeep is released under GNU General Public License V3 (or later). It covers all peeps and their needs!
+Thanks for your interest in using <strong>WikiPeep</strong>. WikiPeep is released under GNU General Public License V3 (or later). It covers all peeps and their needs!
 
 **More info about how you can financially support WikiPeep, on [Donate page](/donate).**
 
